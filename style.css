@@ -1,0 +1,57 @@
+body {
+    font-family: 'ink free', sans-serif;
+    background-color: black;
+    color: coral;
+}
+
+h1 {
+    color: #f64e00;
+}
+
+/* Attribute Selector */
+a {
+    color: ;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(0, 204, 255);
+}
+
+/* Child Selector */
+ul>li {
+    font-weight: bold;
+}
+
+/* Sibling Selector */
+h1+p {
+    background-color: royalblue;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* :hover Pseudo-class */
+ul li:nth-child(1) {
+    background-color: black;
+}
+
+/* :not(selsctor) Pseudo-class */
+p:not(:first-of-type) {
+    text-decoration: underline;
+}
+
+/* ::before Pseudo-element */
+ul li::before {
+    content: 🚀;
+}
+
+/* ::after Pseudo-element */
+a::after {
+    content: 🌌;
+}
+
+/* ::first-letter Pseudo-element */
+p::first-letter {
+    font-size: 200%;
+    color: orange;
+}
